@@ -1,4 +1,5 @@
-#!/home/sasha/dev/Python/wialonAPI/env python3
+#!/home/sasha/dev/Python/wialonAPI/venv python3.8
+
 
 from wialon import Wialon, WialonError
 import xlsxwriter as xls

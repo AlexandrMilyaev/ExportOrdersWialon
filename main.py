@@ -53,7 +53,7 @@ if __name__ == '__main__':
         worksheet.write(str_xlsx, 11, 'Долгота')
         worksheet.write(str_xlsx, 12, 'Широта')
         custom_filds = dict()
-        number_cf = 13
+        number_cf = 12
         for el in orders:
             orders = el['orders']
             for num in orders.values():
@@ -67,7 +67,7 @@ if __name__ == '__main__':
                     worksheet.write(str_xlsx, 5, num['p']['c'])
                     st = int(num['p']['ut']//60)
                     worksheet.write(str_xlsx, 6, st)
-                    worksheet.write(str_xlsx, 7, str(num['p']['tags']))
+                    worksheet.write(str_xlsx, 7, '|'.join(num['p']['tags']))
                     worksheet.write(str_xlsx, 8, sec_to_time(num['tf']))
                     worksheet.write(str_xlsx, 9, sec_to_time(num['tt']))
                     worksheet.write(str_xlsx, 10, num['r'])
